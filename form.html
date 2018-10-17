@@ -2,15 +2,45 @@
 <html>
     <head>
         <meta charset="utf-8">
-
+        <style>
+            input{
+                display:block;
+            }
+        </style>
         
 
     </head>
 
     <body>
-        <form action="/" method="get">
-            <input />
-            
+        <form action="form.index" method="get">
+            <input type="text" name="title"/>
+            <input type="number" name="sales">
+            <input type="radio" name="genre" value="sci fi"/>
+            <input type="radio" name="genre" value="Mystry"/>
+            <input type="radio" name="genre" value="Romance"/>
+            <input type="email" name="email"/>
+            <input type="file" name="upload" />
+            <input type="date" name="date"/>
+            <input type="password" name="password"/>
+            <input type="checkbox" name="gener" value="male"/>
+            <input type="checkbox" name="gener" value="female"/>
+            <input type="checkbox" name="gener" value="Unknown"/>
+            <input type="submit" name="color"/>
+            <select name="movie">
+                <option value="1">Batman</option>
+                <option value="2">Harry Potter</option>
+                <option value="3">SheWoman</option>
+
+            </select>
+
+            <select name="movie" multiple>
+                    <option value="1">Batman</option>
+                    <option value="2">Harry Potter</option>
+                    <option value="3">SheWoman</option>
+    
+            </select>
+
+            <input type="submit" value="Submit"/>
         
         </form>
 
