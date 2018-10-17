@@ -24,6 +24,12 @@ class BooksController < ApplicationController
   # POST /books
   # POST /books.json
   def create
+    # @book = Book.new
+    # @book.title = params[:title]
+    # @book.sales = params[:sales]
+    # @book.published = params[:published]
+    # @book.genre = params[:genre]
+    # @book.save
     # @book = Book.new(book_params)
 
     # respond_to do |format|
@@ -36,7 +42,7 @@ class BooksController < ApplicationController
     #   end
     # end
 
-    @params = params[:sales]
+    @book =Book.new(params.require(:book).permit(:title,:sales,:published,:genre))
     render 'new'
   end
 
